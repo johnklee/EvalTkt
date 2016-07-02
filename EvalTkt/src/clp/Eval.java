@@ -22,6 +22,7 @@ import gays.tools.ArguParser;
 import gays.tools.enums.EArguQuantity;
 import gays.tools.enums.EArguRestrict;
 
+
 public class Eval {
 	// Output Correction Level Detail Log
 	public static String OutputCL(JList<String> list, HashMap<String,Map<Integer,String>> rtMap)
@@ -176,7 +177,7 @@ public class Eval {
 		qsr.open();
 		for(String line:qsr)
 		{
-			// B1-0201-1, 3, 生, 26, 直, 35, 關
+			// B1-0201-1, 3, ���, 26, �, 35, ���
 			line = line.trim();			
 			String items[] = line.split(",");
 			if(items.length%2!=0)
@@ -304,7 +305,8 @@ public class Eval {
 		/*QSWriter qsw = new QSWriter(output);
 		if(output!=null) qsw = new QSWriter(output);
 		else qsw = new QSWriter();*/
-		StringBuffer outputBuf = new StringBuffer("CLP 2014 Bakeoff: Chinese Spelling Check Task"+Envset.BreakLine);
+//		StringBuffer outputBuf = new StringBuffer("CLP 2014 Bakeoff: Chinese Spelling Check Task"+Envset.BreakLine);
+		StringBuffer outputBuf = new StringBuffer("SIGHAN 2015 Bakeoff: Chinese Spelling Check Task"+Envset.BreakLine);
 		outputBuf.append(Envset.BreakLine);
 		
 		// The false positive rate is FP / (FP + TN).

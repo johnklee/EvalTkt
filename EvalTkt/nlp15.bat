@@ -1,0 +1,1 @@
+java -jar nlptea15cged.jar -i data/NLPTEA/NLPTEA15_Toy_Result.txt -t data/NLPTEA/NLPTEA15_Toy_Truth.txt -o nlp15_ignorecase.txt
